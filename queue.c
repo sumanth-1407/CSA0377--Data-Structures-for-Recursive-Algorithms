@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #define size 5
 int front = -1, rear = -1;
-void enqueue(int s[])
+void enqueue(int q[])
 {
     if (rear == size - 1)
     {
@@ -14,10 +14,10 @@ void enqueue(int s[])
         printf("Enter Element to Enqueue");
         scanf("%d", &x);
         rear = rear + 1;
-        s[rear] = x;
+        q[rear] = x;
     }
 }
-void dequeue(int s[])
+void dequeue(int q[])
 {
     if (front == rear && rear == -1)
     {
@@ -25,11 +25,11 @@ void dequeue(int s[])
     }
     else
     {
-        printf("Dequeue Element : %d ", s[front + 1]);
+        printf("Dequeue Element : %d ", q[front + 1]);
         front = front + 1;
     }
 }
-void display(int s[])
+void display(int q[])
 {
     if (front == -1 && rear == -1)
     {
@@ -40,7 +40,7 @@ void display(int s[])
         printf("Current Queue : \n");
         for (int i = front + 1; i <= rear; i++)
         {
-            printf("%d\t", s[i]);
+            printf("%d\t",q[i]);
         }
     }
 }
