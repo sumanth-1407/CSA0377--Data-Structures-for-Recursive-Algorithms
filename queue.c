@@ -11,7 +11,7 @@ void enqueue(int q[])
     else
     {
         int x;
-        printf("Enter Element to Enqueue");
+        printf("Enter Element to Enqueue\n");
         scanf("%d", &x);
         rear = rear + 1;
         q[rear] = x;
@@ -21,7 +21,7 @@ void dequeue(int q[])
 {
     if (front == rear && rear == -1)
     {
-        printf("Queue Is Empty.Dequeue Not Possible");
+        printf("Queue Is Empty.Dequeue Not Possible\n");
     }
     else
     {
