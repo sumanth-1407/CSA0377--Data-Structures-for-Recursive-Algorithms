@@ -28,7 +28,7 @@ void main()
     }
     if(flag==1)
     {
-        printf("Element %d is found at %d",key,i);
+        printf("Element %d is found at %d",key,mid);
     }
     else
     printf("The element is not found");
