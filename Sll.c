@@ -64,8 +64,7 @@ void iend()
     newnode = (struct node *)malloc(sizeof(struct node *));
     newnode->data = x;
     newnode->next = NULL;
-    for (p = head; p->next != NULL; p = p->next)
-        ;
+    for (p = head; p->next != NULL; p = p->next);
     p->next = newnode;
     p = newnode;
 }
