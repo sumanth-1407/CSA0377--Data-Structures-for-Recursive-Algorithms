@@ -25,8 +25,7 @@ void create()
         }
         else
         {
-            for (p = head; p->next != NULL; p = p->next)
-                ;
+            for (p = head; p->next != NULL; p = p->next);
             p->next = newnode;
             p = newnode;
         }
