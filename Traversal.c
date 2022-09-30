@@ -38,16 +38,16 @@ void preorder(struct node *root)
     if (root != NULL)
     {
         printf("%d\t", root->data);
-        inorder(root->left);
-        inorder(root->right);
+        preorder(root->left);
+        preorder(root->right);
     }
 }
 void postorder(struct node *root)
 {
     if (root != NULL)
     {
-        inorder(root->left);
-        inorder(root->right);
+        postorder(root->left);
+        postorder(root->right);
         printf("%d\t", root->data);
     }
 }
