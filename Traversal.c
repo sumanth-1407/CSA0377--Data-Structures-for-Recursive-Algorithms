@@ -59,7 +59,7 @@ int main()
     do
     {
         printf("\n*********Main menu*********\n");
-        printf(" 1.Create\n 2.In order Traversal\n 3.Pre order Traversal\n 4.Post order Traversal\n 5.Exit\n");
+        printf(" 1.Insert\n 2.In order Traversal\n 3.Pre order Traversal\n 4.Post order Traversal\n 5.Exit\n");
         printf("Enter your choice\n");
         scanf("%d", &choice);
         switch (choice)
