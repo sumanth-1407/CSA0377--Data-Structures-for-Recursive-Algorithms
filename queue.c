@@ -19,26 +19,26 @@ void enqueue(int q[])
 }
 void dequeue(int q[])
 {
-    if (front == rear && rear == -1)
+    if (front==rear && rear==-1)
     {
         printf("Queue Is Empty.Dequeue Not Possible\n");
     }
     else
     {
-        printf("Dequeue Element : %d ", q[front + 1]);
+        printf("Dequeue Element : %d ", q[front+1]);
         front = front + 1;
     }
 }
 void display(int q[])
 {
-    if (front == -1 && rear == -1)
+    if (rear == -1 || front==rear)
     {
         printf("Queue is Empty.\n");
     }
     else
     {
         printf("Current Queue : \n");
-        for (int i = front + 1; i <= rear; i++)
+        for (int i = front+1; i <= rear; i++)
         {
             printf("%d\t",q[i]);
         }
@@ -49,7 +49,7 @@ int main()
     int choice;
     int queue[size];
     printf("\nOperations Available \n");
-    printf("1.Enqueue \n2.Dequeue \n3.Display\n 4.Exit\n");
+    printf("1.Enqueue \n2.Dequeue \n3.Display\n4.Exit\n");
     while (1)
     {
         printf("\nEnter Choice : ");
@@ -61,6 +61,7 @@ int main()
             break;
         case 2:
             dequeue(queue);
+            break;
         case 3:
             display(queue);
             break;
